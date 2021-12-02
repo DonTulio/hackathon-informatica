@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div>
+        <h1><a href="/"></a>Lista de Prestamos</h1>
+    </div>
+    <h1>Nuevo Prestamo</h1>
+    <form method="POST" action="{% url 'NuevoPrestamo' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" >Guardar</button>
+    </form>
+{% endblock %}

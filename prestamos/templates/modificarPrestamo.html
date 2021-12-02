@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestamo</title>
+    <link rel="stylesheet" href="{% static 'bootstrap-4.6.0-dist/css/bootstrap.min.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}" >
+</head>
+<body>
+    <div>
+        <h1><a href="/"></a>Lista de Prestamos</h1>
+    </div>
+    <h1>Modificar</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" >Modificar Prestamo</button>
+    </form>
+
+       <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+       <script src="{% static 'jQuery/jquery-3.5.1.min.js' %}"></script>
+       <script src="{% static 'bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js' %}"></script>   
+</body>
+</html>
