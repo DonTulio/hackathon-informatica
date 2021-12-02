@@ -1,4 +1,5 @@
 # Información
+deben usar la llave para poder conectarse "ackathon-informatica.pem"
 
 | Grupo   | Dirección IP  | Puerto WEB | Puerto SSH |
 |---------|---------------|------------|------------|
